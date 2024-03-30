@@ -1,5 +1,6 @@
-const config = {
-  db: 'mongodb://localhost/chat-ws',
-};
+import * as dotenv from 'dotenv'
+dotenv.config()
 
-export default config;
+export default {
+  port: process.env.PORT || 8626
+};

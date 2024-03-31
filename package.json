@@ -1,19 +1,18 @@
 {
-  "name": "chat-ws",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "prepare": "husky install",
-    "pre-commit-all": "npm-run-all --parallel lint:*",
-    "lint:api": "cd api && npm run typecheck && npm run lint",
-    "lint:client": "cd client && npm run typecheck && npm run lint"
-  },
-  "keywords": [],
   "author": "",
+  "description": "",
+  "devDependencies": {},
+  "keywords": [],
   "license": "ISC",
-  "devDependencies": {
-    "husky": "^8.0.3",
-    "npm-run-all": "^4.1.5"
-  }
+  "main": "index.js",
+  "name": "chat-ws",
+  "scripts": {
+    "dev": "npm run dev:api & npm run dev:client",
+    "dev:api": "cd api && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "install": "npm run install:api && npm run install:client",
+    "install:api": "cd api && npm i",
+    "install:client": "cd client && npm i"
+  },
+  "version": "1.0.0"
 }

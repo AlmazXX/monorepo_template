@@ -5,7 +5,7 @@
   "keywords": [],
   "license": "ISC",
   "main": "index.js",
-  "name": "chat-ws",
+  "name": "NAME_TOBE_SET",
   "scripts": {
     "dev": "npm run dev:api & npm run dev:client",
     "dev:api": "cd api && npm run dev",
